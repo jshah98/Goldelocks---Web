@@ -1,0 +1,229 @@
+/*@import url('https://fonts.googleapis.com/css?family=Poiret+One');*/
+@import url('https://fonts.googleapis.com/css?family=PT+Serif|Quicksand');
+* {
+  /*font-family: 'PT Serif', serif;*/
+  font-family: 'Quicksand', sans-serif;
+}
+html, body {
+  width:100%;
+  height:100%;
+  padding:0;
+  margin:0;
+  overflow: hidden;
+}
+body {
+  background-size:100% auto;
+}
+::-webkit-scrollbar {
+    width: 12px;
+}
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+    border-radius: 10px;
+}
+::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5);
+}
+::-webkit-input-placeholder {
+  color:#444;
+}
+input[type=range] {
+  -webkit-appearance: none;
+  width: 90%;
+  padding:15px 0;
+  background:transparent;
+}
+input[type=range]:focus {
+  outline: none;
+}
+input[type=range]::-webkit-slider-runnable-track {
+  width: 100%;
+  height: 3.4px;
+  cursor: pointer;
+  box-shadow: 0px 0px 0px rgba(0, 0, 0, 0), 0px 0px 0px rgba(13, 13, 13, 0);
+  background: #EEE;
+  border-radius: 0px;
+  border: 0px solid rgba(1, 1, 1, 0);
+}
+input[type=range]::-webkit-slider-thumb {
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0), 0px 0px 1px rgba(13, 13, 13, 0);
+  border: 0.1px solid rgba(0, 0, 0, 0.52);
+  height: 22px;
+  width: 22px;
+  border-radius: 50px;
+  background: #b6ffff;
+  cursor: pointer;
+  -webkit-appearance: none;
+  margin-top: -9.3px;
+}
+input[type=range]::-moz-range-track {
+  width: 100%;
+  height: 3.4px;
+  cursor: pointer;
+  box-shadow: 0px 0px 0px rgba(0, 0, 0, 0), 0px 0px 0px rgba(13, 13, 13, 0);
+  background: #0071a9;
+  border-radius: 0px;
+  border: 0px solid rgba(1, 1, 1, 0);
+}
+input[type=range]::-moz-range-thumb {
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0), 0px 0px 1px rgba(13, 13, 13, 0);
+  border: 0.1px solid rgba(0, 0, 0, 0.52);
+  height: 22px;
+  width: 22px;
+  border-radius: 50px;
+  background: #b6ffff;
+  cursor: pointer;
+}
+input[type=range]::-ms-track {
+  width: 100%;
+  height: 3.4px;
+  cursor: pointer;
+  background: transparent;
+  border-color: transparent;
+  color: transparent;
+}
+input[type=range]::-ms-fill-lower {
+  background: #006ea4;
+  border: 0px solid rgba(1, 1, 1, 0);
+  border-radius: 0px;
+  box-shadow: 0px 0px 0px rgba(0, 0, 0, 0), 0px 0px 0px rgba(13, 13, 13, 0);
+}
+input[type=range]::-ms-fill-upper {
+  background: #0071a9;
+  border: 0px solid rgba(1, 1, 1, 0);
+  border-radius: 0px;
+  box-shadow: 0px 0px 0px rgba(0, 0, 0, 0), 0px 0px 0px rgba(13, 13, 13, 0);
+}
+input[type=range]::-ms-thumb {
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0), 0px 0px 1px rgba(13, 13, 13, 0);
+  border: 0.1px solid rgba(0, 0, 0, 0.52);
+  height: 22px;
+  width: 22px;
+  border-radius: 50px;
+  background: #b6ffff;
+  cursor: pointer;
+  height: 3.4px;
+}
+input[type=range]:focus::-ms-fill-lower {
+  background: #0071a9;
+}
+input[type=range]:focus::-ms-fill-upper {
+  background: #0074ae;
+}
+output {
+  color:white;
+  line-height: 10px;
+  border:1px solid #FFF;
+  padding:10px;
+  position: absolute;
+}
+.container {
+  width:100%;
+  height:100%;
+  background-color:#33ccff;
+  display:flex;
+}
+.room {
+  width:90%;
+  height:80%;
+  margin:100px;
+  background-color:#0099cc;
+  align-self: center;
+  box-sizing: border-box;
+}
+.table {
+  user-drag: none;
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-drag: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  cursor:pointer;
+  position: absolute;
+  width:180px;
+  height:180px;
+}
+.table h1 {
+  left:80px;
+  top:50px;
+  position: absolute;
+}
+.infobar {
+  width:20%;
+  min-width:300px;
+  height:100%;
+  background-color:#007399;
+  overflow:auto;
+  /*display:flex;
+  flex-wrap:wrap;*/
+}
+.infobar > div {
+  margin:30px;
+}
+.infobar h2 {
+  color:#FFF;
+}
+.infobar input.text {
+  width:100%;
+  background-color:#33ccff;
+  border:none;
+  border-radius:8px;
+  font-size:20px;
+  color:black;
+  margin:0 0 10px 0;
+  padding:5px 10px;
+}
+.infobar button {
+  width:49%;
+  border:1px solid white;
+  padding:10px;
+  border-radius:6px;
+  cursor:pointer;
+  background-color:rgba(0,0,0,0.1);
+  color:#FFF;
+}
+.infobar button:hover:enabled {
+  background-color:rgba(0,0,0,0.7);
+}
+.infobar button:disabled {
+  border-color: #555;
+  color:#555;
+}
+.infobar #save {
+  width:100%;
+}
+.infobar .containerDiv {
+  width:100%;
+  height:200px;
+  background-color:#33ccff;
+  border-radius:8px;
+  padding:0;
+  margin:0;
+}
+#waiter {
+  width:85%;
+}
+#order{
+  width:100%;
+  height:inherit;
+}
+#walkIn{
+  width:100%;
+}
+
+.infobar .addWaiter {
+  width:12%;
+  height:35px;
+  border:1px solid #EEE;
+  text-align: center;
+}
+.addWaiter p {
+  margin:0;
+}
+.border {
+  border:1px solid #EEE;
+}
+.hidden {
+  display:none;
+}

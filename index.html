@@ -1,0 +1,71 @@
+<html>
+  <head>
+    <link href="index.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.css">
+    <script src="https://www.gstatic.com/firebasejs/4.2.0/firebase.js"></script>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="room">
+      </div>
+      <div class="infobar">
+        <div class="setup">
+          <h2 class="subheading"> SETUP </h2>
+          <div>
+          <input id="slider" step="1" min="1" max="12" type="range" list="steplist"
+                  placeholder="TABLE SIZE" oninput="output.value = slider.value"/>
+          <output id="output" for="slider"> 7 </output>
+          <div>
+          <input id="waiter" class="text" placeholder="WAITER"/>
+          <button class="addWaiter" disabled><p>+</p></button>
+          </div>
+          <button id="add"> Add Table </button>
+          <button id="remove"> Remove Table </button>
+          <button id="save"> Save </button>
+          </div>
+        </div>
+
+        <div class="display">
+          <h2 class="subheading"> ORDERS </h2>
+          <div>
+          <div class="containerDiv">
+          </div>
+          <button id="order">Place Order</button>
+          </div>
+        </div>
+
+
+        <div class="display">
+          <h2 class="subheading"> INFO </h2>
+          <div>
+          <input class="text" placeholder="GUEST NAME"/>
+          <div class="containerDiv">
+          </div>
+          </div>
+        </div>
+        <div class="queueContainer">
+          <h2 class="subheading"> QUEUE </h2>
+          <div class="containerDiv">
+          </div>
+        </div>
+        <div class="walkin">
+          <h2 class="subheading"> WALK-IN </h2>
+          <div>
+          <input class="text" placeholder="Guest Name"/>
+          <input class="text" placeholder="Party Size"/>
+          <button id="walkIn"> Add Guest </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="http://code.jquery.com/jquery-3.2.1.min.js"
+            integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+            crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"
+            integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU="
+            crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
